@@ -9,9 +9,21 @@
     :root{
         color-scheme: light dark;
     }
+
+    button{
+        cursor: pointer;
+    }
+    
 </style>
 
 <body>
     <h1>hola mundo</h1>
+    <button>saludar</button>
+    <script> 
+        const button = document.querySelector('button');
+        button.addEventListener('click', ()=>{
+            alert("hola mundo")
+        })
+    </script>
 </body>
 </html>
